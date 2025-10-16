@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Space Odyssey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&family=Poltawski+Nowy:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.png">
+  <meta name="description" content="Contactez l'équipe Space Odyssey">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-top">
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo">
+      </div>
+      <div class="navbar-right">
+        <input type="text" placeholder="Search..." class="search-bar">
+        <select class="language">
+          <option>FR</option>
+          <option>EN</option>
+          <option>AR</option>
+        </select>
+        <div class="notification">🔔</div>
+        <img src="https://i.pravatar.cc/40" alt="Profile" class="profile-img">
+      </div>
+    </div>
+    <nav class="navbar-bottom">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planets.html">Planètes</a></li>
+        <li><a href="missions.html">Missions Spatiales</a></li>
+        <li><a href="about.html">À propos</a></li>
+      </ul>
+      <a class="contact-btn" href="contact.html" aria-label="Contact">Contact Us</a>
+      <button class="menu-toggle" onclick="this.parentElement.classList.toggle('is-open')" aria-label="menu">Menu</button>
+    </nav>
+  </header>
+
+  <main class="container-tight">
+    <h1 class="h1">Contact</h1>
+    <form class="form-grid">
+      <input class="search-bar" type="text" placeholder="Votre nom" required>
+      <input class="search-bar" type="email" placeholder="Votre email" required>
+      <textarea class="search-bar" style="height: 140px; resize: vertical; padding: 12px;" placeholder="Votre message"></textarea>
+      <button class="contact-btn" type="submit">Envoyer</button>
+    </form>
+  </main>
+
+</body>
+</html>
+

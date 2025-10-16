@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Planètes du Système Solaire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&family=Poltawski+Nowy:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-top">
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo">
+      </div>
+      <div class="navbar-right">
+        <input type="text" placeholder="Search..." class="search-bar">
+        <select class="language">
+          <option>Français</option>
+          <option>Anglais</option>
+          <option>Arabe</option>
+        </select>
+        <div class="notification">🔔</div>
+        <img src="https://i.pravatar.cc/40" alt="Profile" class="profile-img">
+      </div>
+    </div>
+    <nav class="navbar-bottom">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planets.html">Planètes</a></li>
+        <li><a href="missions.html">Missions Spatiales</a></li>
+        <li><a href="about.html">À propos</a></li>
+      </ul>
+      <a class="contact-btn" href="contact.html" aria-label="Contact">Contact Us</a>
+      <!-- <button class="menu-toggle" onclick="this.parentElement.classList.toggle('is-open')" aria-label="menu">Menu</button> -->
+    </nav>
+  </header>
+
+  <div class="container">
+    <header style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+      <div>
+        <h1 class="h1" style="margin:0">Discover the Universe</h1>
+        <p class="muted" style="margin:0">Explore the wonders of the universe. 
+            Discover stars, planets, and galaxies like never before !</p>
+      </div>
+    </header>
+
+    <main class="grid planets-grid">
+      <article class="card planet-card">
+        <div class="planet-top">
+          <div class="planet-img">
+            <img src="/img/planets/Mercury_in_true_color.jpg" alt="Mercure">
+          </div>
+
+          <div class="planet-info">
+            <h2>Mercure</h2>
+            <p class="muted">Planète tellurique la plus proche du Soleil</p>
+          </div>
+        </div>
+        <div class="planet-desc">Petite planète rocheuse, sans atmosphère globale significative et fortement cratérisée. Exposée aux températures extrêmes.</div>
+        <div class="planet-data">
+          <div class="item">Lunes : 0</div>
+          <div class="item">Durée d'une journée : ~58,6 jours terrestres</div>
+          <div class="item">Temp. moyenne : -60 °C (varie -173 à +427 °C)</div>
+          <div class="item">Diamètre : 4 880 km</div>
+        </div>
+      </article>
+
+      <article class="card planet-card">
+        <div class="planet-top">
+          <div class="planet-img">
+            <img src="/img/planets/Mercury_in_true_color.jpg" alt="Mercure">
+          </div>
+          <div class="planet-info">
+            <h2>Vénus</h2>
+            <p class="muted">Voisine de la Terre, enveloppée d'une atmosphère dense</p>
+          </div>
+        </div>
+        <div class="planet-desc">Atmosphère épaisse principalement composée de CO₂, effet de serre extrême; surface volcanique et pressions très élevées.</div>
+        <div class="planet-data">
+          <div class="item">Lunes : 0</div>
+          <div class="item">Durée d'une journée : ~243 jours terrestres (rétrograde)</div>
+          <div class="item">Temp. moyenne : ~462 °C</div>
+          <div class="item">Diamètre : 12 104 km</div>
+        </div>
+      </article>
+
+      <article class="card planet-card">
+        <div class="planet-top">
+          <div class="planet-img g-earth">Terre</div>
+          <div class="planet-info">
+            <h2>Terre</h2>
+            <p class="muted">Notre planète, riche en eau et vie</p>
+          </div>
+        </div>
+        <div class="planet-desc">Planète tellurique avec une atmosphère protectrice et océan global; possède un satellite naturel, la Lune.</div>
+        <div class="planet-data">
+          <div class="item">Lunes : 1 (La Lune)</div>
+          <div class="item">Durée d'une journée : 24 h</div>
+          <div class="item">Temp. moyenne : ~15 °C</div>
+          <div class="item">Diamètre : 12 742 km</div>
+        </div>
+      </article>
+
+      <article class="card planet-card">
+        <div class="planet-top">
+          <div class="planet-img g-mars">Mars</div>
+          <div class="planet-info">
+            <h2>Mars</h2>
+            <p class="muted">La planète rouge, candidate principale pour l'exploration humaine</p>
+          </div>
+        </div>
+        <div class="planet-desc">Surface désertique, canyons et volcans; atmosphère ténue principalement CO₂; saisons et calottes polaires.</div>
+        <div class="planet-data">
+          <div class="item">Lunes : 2 (Phobos, Déimos)</div>
+          <div class="item">Durée d'une journée : ~24.6 h</div>
+          <div class="item">Temp. moyenne : -60 °C</div>
+          <div class="item">Diamètre : 6 779 km</div>
+        </div>
+      </article>
+
+      <article class="card planet-card">
+        <div class="planet-top">
+          <div class="planet-img g-jupiter">Jupiter</div>
+          <div class="planet-info">
+            <h2>Jupiter</h2>
+            <p class="muted">Géante gazeuse, la plus massive du système solaire</p>
+          </div>
+        </div>
+        <div class="planet-desc">Composition principalement d'hydrogène et d'hélium; célèbre pour sa Grande Tache Rouge (tempête persistante) et ses nombreux satellites.</div>
+        <div class="planet-data">
+          <div class="item">Lunes : 80+ (ex : Io, Europe, Ganymède, Callisto)</div>
+          <div class="item">Durée d'une journée : ~9.9 h</div>
+          <div class="item">Temp. moyenne (nuages) : -145 °C</div>
+          <div class="item">Diamètre : ~139 820 km</div>
+        </div>
+      </article>
+
+      <article class="card planet-card">
+        <div class="planet-top">
+          <div class="planet-img g-saturn">Saturne</div>
+          <div class="planet-info">
+            <h2>Saturne</h2>
+            <p class="muted">Géante gazeuse célèbre pour ses anneaux</p>
+          </div>
+        </div>
+        <div class="planet-desc">Anneaux spectaculaires constitués de glace et de roche; plusieurs lunes importantes (ex : Titan).</div>
+        <div class="planet-data">
+          <div class="item">Lunes : 80+ (ex : Titan, Encelade)</div>
+          <div class="item">Durée d'une journée : ~10.7 h</div>
+          <div class="item">Temp. moyenne : -178 °C</div>
+          <div class="item">Diamètre : ~116 460 km</div>
+        </div>
+      </article>
+
+      <article class="card planet-card">
+        <div class="planet-top">
+          <div class="planet-img g-uranus">Uranus</div>
+          <div class="planet-info">
+            <h2>Uranus</h2>
+            <p class="muted">Géante glacée, axe de rotation fortement incliné</p>
+          </div>
+        </div>
+        <div class="planet-desc">Atmosphère riche en méthane donnant une teinte bleu-vert; rotation inclinée presque sur le côté.</div>
+        <div class="planet-data">
+          <div class="item">Lunes : 27+</div>
+          <div class="item">Durée d'une journée : ~17.2 h</div>
+          <div class="item">Temp. moyenne : -195 °C</div>
+          <div class="item">Diamètre : ~50 724 km</div>
+        </div>
+      </article>
+
+      <article class="card planet-card">
+        <div class="planet-top">
+          <div class="planet-img g-neptune">Neptune</div>
+          <div class="planet-info">
+            <h2>Neptune</h2>
+            <p class="muted">Géante glacée, la plus lointaine des planètes classiques</p>
+          </div>
+        </div>
+        <div class="planet-desc">Vents très rapides et atmosphère riche en méthane; possède des lunes et des anneaux faibles.</div>
+        <div class="planet-data">
+          <div class="item">Lunes : 14+</div>
+          <div class="item">Durée d'une journée : ~16.1 h</div>
+          <div class="item">Temp. moyenne : -200 °C</div>
+          <div class="item">Diamètre : ~49 244 km</div>
+        </div>
+      </article>
+
+      <!-- Planètes naines -->
+      <article class="card planet-card">
+        <div class="planet-top">
+          <div class="planet-img g-pluto">Pluton</div>
+          <div class="planet-info">
+            <h2>Pluton</h2>
+            <p class="muted">Planète naine de la ceinture de Kuiper</p>
+          </div>
+        </div>
+        <div class="planet-desc">Corps glacé, découverte riche en reliefs; possède un grand satellite, Charon, et plusieurs plus petits.</div>
+        <div class="planet-data">
+          <div class="item">Lunes : 5 (Charon + 4)</div>
+          <div class="item">Durée d'une journée : ~6.4 jours terrestres</div>
+          <div class="item">Temp. moyenne : ~-229 °C</div>
+          <div class="item">Diamètre : ~2 377 km</div>
+        </div>
+      </article>
+
+      <article class="card planet-card">
+        <div class="planet-top">
+          <div class="planet-img g-eris">Éris</div>
+          <div class="planet-info">
+            <h2>Éris</h2>
+            <p class="muted">Planète naine massive de la ceinture de Kuiper</p>
+          </div>
+        </div>
+        <div class="planet-desc">Un des corps les plus massifs de la ceinture de Kuiper, découverte ayant relancé la discussion sur la définition de "planète".</div>
+        <div class="planet-data">
+          <div class="item">Lunes : 1 (Dysnomie)</div>
+          <div class="item">Durée d'une journée : inconnue (estimation longue)</div>
+          <div class="item">Temp. moyenne : très froide (~-231 °C)</div>
+          <div class="item">Diamètre estimé : ~2 326 km</div>
+        </div>
+      </article>
+
+      <article class="card planet-card">
+        <div class="planet-top">
+          <div class="planet-img g-haumea">Haumea</div>
+          <div class="planet-info">
+            <h2>Haumea</h2>
+            <p class="muted">Planète naine à forme allongée</p>
+          </div>
+        </div>
+        <div class="planet-desc">Rotation très rapide qui lui donne une forme ellipsoïde; située dans la ceinture de Kuiper.</div>
+        <div class="planet-data">
+          <div class="item">Lunes : 2</div>
+          <div class="item">Durée d'une journée : ~3.9 h (très rapide)</div>
+          <div class="item">Temp. moyenne : très froide</div>
+          <div class="item">Diamètre équivalent : ~1 632 km (est.)</div>
+        </div>
+      </article>
+
+      <article class="card planet-card">
+        <div class="planet-top">
+          <div class="planet-img g-makemake">Makémaké</div>
+          <div class="planet-info">
+            <h2>Makémaké</h2>
+            <p class="muted">Planète naine de la ceinture de Kuiper</p>
+          </div>
+        </div>
+        <div class="planet-desc">Corps glacé, découvert au milieu des années 2000; moins d'informations publiques que Pluton ou Éris.</div>
+        <div class="planet-data">
+          <div class="item">Lunes : 1 (découverte récente)</div>
+          <div class="item">Durée d'une journée : inconnue (estimation longue)</div>
+          <div class="item">Temp. moyenne : très froide</div>
+          <div class="item">Diamètre estimé : ~1 430 km</div>
+        </div>
+      </article>
+
+      <article class="card planet-card">
+        <div class="planet-top">
+          <div class="planet-img g-ceres">Cérès</div>
+          <div class="planet-info">
+            <h2>Cérès</h2>
+            <p class="muted">Planète naine située dans la ceinture principale d'astéroïdes</p>
+          </div>
+        </div>
+        <div class="planet-desc">Plus grand objet de la ceinture d'astéroïdes entre Mars et Jupiter; étudié par la sonde Dawn.</div>
+        <div class="planet-data">
+          <div class="item">Lunes : 0</div>
+          <div class="item">Durée d'une journée : ~9 h</div>
+          <div class="item">Temp. moyenne : ~-105 °C (varie)</div>
+          <div class="item">Diamètre : ~946 km</div>
+        </div>
+      </article>
+
+    </main>
+    <footer class="muted" style="font-size:0.95rem;margin-top:18px">Astuce : remplacez les cercles colorés par de vraies images en changeant <code>.planet-img</code> en &lt;img src="..."&gt; dans chaque fiche si vous préférez des photos.</footer>
+  </div>
+</body>
+</html>

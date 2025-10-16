@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missions — Space Odyssey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&family=Poltawski+Nowy:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+    <meta name="description" content="Missions spatiales notables">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-top">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <div class="navbar-right">
+                <input type="text" placeholder="Search..." class="search-bar">
+                <select class="language">
+                    <option>Français</option>
+                    <option>Anglais</option>
+                    <option>Arabe</option>
+                </select>
+                <div class="notification">🔔</div>
+                <img src="https://i.pravatar.cc/40" alt="Profile" class="profile-img">
+            </div>
+        </div>
+        <nav class="navbar-bottom">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planets.html">Planètes</a></li>
+                <li><a href="missions.html">Missions Spatiales</a></li>
+                <li><a href="about.html">À propos</a></li>
+            </ul>
+            <a class="contact-btn" href="contact.html" aria-label="Contact">Contact Us</a>
+            <button class="menu-toggle" onclick="this.parentElement.classList.toggle('is-open')" aria-label="menu">Menu</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="h1">Missions spatiales</h1>
+        <section class="grid">
+            <article class="card">
+                <h2 style="margin-bottom:6px; font-size:1.1rem;">Apollo 11</h2>
+                <p class="muted">Premier alunissage habité (1969). Objectif: poser des humains sur la Lune et les ramener en sécurité.</p>
+            </article>
+            <article class="card">
+                <h2 style="margin-bottom:6px; font-size:1.1rem;">Voyager 1</h2>
+                <p class="muted">Sonde interstellaire (1977–). A fourni des images détaillées des planètes externes et poursuit sa route.</p>
+            </article>
+            <article class="card">
+                <h2 style="margin-bottom:6px; font-size:1.1rem;">James Webb Space Telescope</h2>
+                <p class="muted">Observatoire infrarouge lancé en 2021, dévoilant l’Univers primitif et l’atmosphère d’exoplanètes.</p>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>
