@@ -259,9 +259,16 @@
   position: absolute;
   inset: 0;
   background: url("../img/img3.jpg") center/cover no-repeat;
-  
   opacity: 0.9; /* 🔹 opacité du fond seulement */
   z-index: 0;
+}
+
+.community{
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-comunoty{
+  margin: 0 10px;
 }
 
 .card * {
