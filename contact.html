@@ -41,31 +41,132 @@
     </nav>
   </header>
   <!-- CONTACT -->
-  <main class="container">
-    <section class="contact-section container-tight" aria-label="Contact">
-      <h1 class="h1">Contact</h1>
-      <p class="muted" style="margin-bottom:14px;">Nous serions ravis d'échanger avec vous.</p>
-      <form class="contact-form card" action="#" method="post" novalidate>
-        <div class="form-grid">
-          <div class="form-field">
-            <label for="name">Nom complet</label>
-            <input type="text" id="name" name="name" placeholder="Votre nom" required />
-          </div>
-          <div class="form-field">
-            <label for="email">Adresse e-mail</label>
-            <input type="email" id="email" name="email" placeholder="vous@example.com" required />
-          </div>
-          <div class="form-field form-span">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" placeholder="Votre message..."></textarea>
-          </div>
-          <div class="form-actions form-span">
-            <button type="submit" class="btn">Envoyer</button>
-          </div>
+  <section class="content">
+    <div class="contact-description">
+        <div class="contact-description-img-parent">
+            <img src="./img/contact-img.png" alt="contact-img">
+                <div class="contact-description-img-child">
+                    <div class="contact-description-img CDI-title">
+                        <p id="CDI-title-h1">Contact US</p>
+                        <p>Say something to start a live chat!</p>
+                    </div>
+                    <div class="contact-description-img CDI-middle">
+                        <div class="CDI-middle-number">
+                            <img src="../images/bxs_phone-call.png" alt="phone">
+                            <p> +1012 3456 789</p>
+                        </div>
+                        <div class="CDI-middle-email">
+                            <img src="../images/ic_sharp-email.png" alt="email">
+                            <p> demo@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-description-img CDI-social">
+                        <img src="../images/Social Network.png" alt="s1">
+                        <img src="../images/Social Network-1.png" alt="s2">
+                        <img src="../images/Social Network-2.png" alt="s3">
+                    </div>
+                </div>
         </div>
-      </form>
-    </section>
-  </main>
+        <div class="contact-description-content">
+                <div class="content-form">
+                    <form action="POST">
+                        <div class="form-container">
+                            <div class="form-container-left">
+                                <div class="container-input">
+                                    <label for="first-name">First Name :</label>
+                                    <input type="text" id="first-name" class="input" >
+                                </div>
+                                <br><br>
+                                <div class="container-input">
+                                    <label for="first-name">Email :</label>
+                                    <input type="email" id="first-name" class="input">
+                                </div>
+                            </div>
+                            <div class="form-container-right">
+                                <div class="container-input">
+                                    <label for="first-name">Last Name :</label>
+                                    <input type="text" id="first-name" class="input">
+                                </div>
+                                <br><br>
+                                <div class="container-input">
+                                    <label for="first-name">Phone Number :</label>
+                                    <input type="tel" id="first-name" class="input">
+                                </div>
+                            </div>
+                            <div class="form-container-bottom">
+                                
+                                <div class="container-radio">
+                                    <div class="container-radio-title">
+                                        <label for="first-name" >Select Subject?</label>
+                                    </div>
+                                    <div class="radio-btn">
+                                        <div>
+                                            <input type="radio" name="Select-Subject" class="radio"><label for="Select-Subject">General Inquiry</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="Select-Subject" class="radio"><label for="Select-Subject">General Inquiry</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="Select-Subject" class="radio"><label for="Select-Subject">General Inquiry</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="Select-Subject" class="radio"><label for="Select-Subject">General Inquiry</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container-input">
+                                    <label for="first-name">Message :</label>
+                                    <p>Write your message..</p>
+                                    <input type="text" id="first-name" class="input" >
+                                </div>
+                            </div>
+                            <div class="container-botton">
+                                <input type="submit" value="Send Message">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+    <div class="contact-cards">
+        <div class="contact-cards-list">
+            <div class="contact-img">
+                <img src="../images/email_2099199 1.png" alt="contact-1">
+            </div>
+            <div class="contact-text">
+                <p>Email</p>
+            </div>
+            <div class="contact-des"><p>For any inquiries or assistance, feel free to contact us via email. We are here to help with your questions.</p></div>
+        </div>
+        <div class="contact-cards-list">
+            <div class="contact-img">
+                <img src="../images/chat_10547720 1.png" alt="contact-1">
+            </div>
+            <div class="contact-text">
+                <p>Live Chat</p>
+            </div>
+            <div class="contact-des">
+                <P>Connect with us through live chat for instant support and answers to your questions. We're here to help you!</P>
+                <a href="#">Click Here ></a>
+            </div>
+        </div>
+        <div class="contact-cards-list">
+            <div class="contact-img">
+                <img src="../images/phone-call_455705 1.png" alt="contact-1">
+            </div>
+            <div class="contact-text">
+                <p>Phone</p>
+            </div>
+            <div class="contact-des">
+                <P>Take the next step in your career with opportunities for development, mentorship, and professional networking.</P>
+                <a href="#">+94112224556</a>                    
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  
   <div class="footer">
     <div class="footer-content">
       <div class="footer-top">
@@ -113,7 +214,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>  
   </div>
   <script>
     // Reveal sections on scroll

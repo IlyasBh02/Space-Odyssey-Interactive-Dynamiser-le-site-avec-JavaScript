@@ -46,13 +46,16 @@
   position: absolute;
   inset: 0;
   background: url("../img/img3.jpg") center/cover no-repeat;
+  
   opacity: 0.9; /* 🔹 opacité du fond seulement */
   z-index: 0;
 }
 
 .card * {
   position: relative;
-  z-index: 1; /* 🔹 garde le texte au-dessus du fond */
+  z-index: 1;
+  backdrop-filter: blur(4px);
+/* 🔹 garde le texte au-dessus du fond */
 }
 
 .muted{color:var(--color-muted);}
@@ -252,6 +255,183 @@
   color: black;
   border-color: var(--color-accent);
 }
+
+  /* ----- Contact Us page ----- */
+
+
+  .contact-description{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    justify-items: center;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px 5px #9999999d;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    margin-left: 14%;
+    margin-right: 14%;
+}
+.contact-description-img-parent{
+    position: relative;
+}
+.contact-description-img-child{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: #ffffff;
+    display: grid;
+    grid-template-rows: auto 1fr  1fr;
+    height: 95%;
+}
+.contact-description img{
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    margin: 10px;
+}
+.contact-description-img p{
+    font-size: 18px;
+}
+#CDI-title-h1{
+    font-size: 36px;
+    line-height: 0;
+    font-family: 'Orbitron';
+    font-weight: 600;
+}
+.CDI-middle{
+    /* transform: translate(0%, 50%);  */
+    color: rgb(255, 255, 255);
+    align-content: end;
+}
+.CDI-middle-number ,.CDI-middle-email{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    grid-auto-flow: column;
+}
+.CDI-social{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: end;
+    width: 50px;
+}
+.contact-description-content{
+    background-color: #ffffff;
+    width: 100%;
+
+    margin: 50px;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    row-gap: 40px;
+    padding-right: 50px;
+}
+.form-container-left ,.form-container-right{
+    grid-area: span 1;
+}
+.form-container-bottom{
+    grid-column: span 2;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.container-input{
+    display: grid;
+    font-family: 'Poppins';
+}
+.container-input label{
+    font-size: 25px;
+    font-weight: 200;
+}
+.container-radio-title label{
+        font-size: 25px;
+    font-weight: 200;
+}
+.container-input .input{
+    background-color: #99999900;
+    padding: 15px;
+    border: none;
+    border-bottom:1px solid #414141;
+    font-size: larger;
+    outline: none;
+}
+.radio-btn{
+    display: grid;
+    grid-auto-flow: column;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+.container-radio label{
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.container-botton{
+    justify-self: end;
+    grid-column: span 2;
+}
+.container-botton input{
+    top: 60px;
+    background-color: black;
+    padding: 15px 20px 15px 20px;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: larger;
+}
+.container-botton input:hover{
+    background-color: rgb(255, 255, 255);
+    border:1px solid #000000;
+    color: #000000;
+}
+
+.contact-cards{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 55px;
+    margin-left: 15%;
+    margin-right: 12%;
+    margin-top: 100px;
+}
+.contact-cards-list{
+    display: grid;
+    justify-items: start;
+}
+.contact-img{
+    justify-content: flex-start;
+    justify-self: start;
+}
+.contact-cards-list p{
+    text-align: start;
+    font-family: 'Port Lligat Slab';
+}
+.contact-des{
+    width: 65%;
+}
+.contact-des p{
+    font-family: 'Port Lligat Slab';
+    font-size: 16px;
+}
+.contact-cards{
+    margin-bottom: 80px;
+}
+.contact-text{
+    font-family: 'Port Lligat Slab';
+    font-size: 32px;
+    font-weight: 600;
+}
+.contact-des a{
+
+    color: #0f0f0f;
+}
+
+
 
 /* ===== SLIDER ===== */
 .slidr{
