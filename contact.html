@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Space Odyssey</title>
+  <title>Space Odyssey</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&family=Poltawski+Nowy:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="img/logo.png">
-  <meta name="description" content="Contactez l'équipe Space Odyssey">
 </head>
-<body>
+<body class="page-contact">
+
+  <!-- NAVBAR -->
   <header class="navbar">
+    <!-- Section supérieure -->
     <div class="navbar-top">
       <div class="logo">
         <img src="./img/logo.png" alt="logo">
@@ -20,14 +21,15 @@
       <div class="navbar-right">
         <input type="text" placeholder="Search..." class="search-bar">
         <select class="language">
-          <option>FR</option>
-          <option>EN</option>
-          <option>AR</option>
+          <option>Français</option>
+          <option>Anglais</option>
+          <option>Arabe</option>
         </select>
         <div class="notification">🔔</div>
         <img src="https://i.pravatar.cc/40" alt="Profile" class="profile-img">
       </div>
     </div>
+    <!-- Section inférieure -->
     <nav class="navbar-bottom">
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -36,20 +38,43 @@
         <li><a href="about.html">À propos</a></li>
       </ul>
       <a class="contact-btn" href="contact.html" aria-label="Contact">Contact Us</a>
-      <button class="menu-toggle" onclick="this.parentElement.classList.toggle('is-open')" aria-label="menu">Menu</button>
     </nav>
   </header>
-
-  <main class="container-tight">
-    <h1 class="h1">Contact</h1>
-    <form class="form-grid">
-      <input class="search-bar" type="text" placeholder="Votre nom" required>
-      <input class="search-bar" type="email" placeholder="Votre email" required>
-      <textarea class="search-bar" style="height: 140px; resize: vertical; padding: 12px;" placeholder="Votre message"></textarea>
-      <button class="contact-btn" type="submit">Envoyer</button>
-    </form>
+  <!-- CONTACT -->
+  <main class="container">
+    <section class="contact-section container-tight" aria-label="Contact">
+      <h1 class="h1">Contact</h1>
+      <p class="muted" style="margin-bottom:14px;">Nous serions ravis d'échanger avec vous.</p>
+      <form class="contact-form card" action="#" method="post" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Adresse e-mail</label>
+            <input type="email" id="email" name="email" placeholder="vous@example.com" required />
+          </div>
+          <div class="form-field form-span">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Votre message..."></textarea>
+          </div>
+          <div class="form-actions form-span">
+            <button type="submit" class="btn">Envoyer</button>
+          </div>
+        </div>
+      </form>
+    </section>
   </main>
-
-</body>
-</html>
-
+  <script>
+    // Reveal sections on scroll
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+    }, { threshold: 0.2 });
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+  </body>
+  </html>

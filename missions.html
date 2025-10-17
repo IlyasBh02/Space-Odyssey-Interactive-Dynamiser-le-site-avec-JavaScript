@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Missions — Space Odyssey</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&family=Poltawski+Nowy:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/logo.png">
-    <meta name="description" content="Missions spatiales notables">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Odyssey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&family=Poltawski+Nowy:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="navbar-top">
-            <div class="logo">
-                <img src="./img/logo.png" alt="logo">
-            </div>
-            <div class="navbar-right">
-                <input type="text" placeholder="Search..." class="search-bar">
-                <select class="language">
-                    <option>Français</option>
-                    <option>Anglais</option>
-                    <option>Arabe</option>
-                </select>
-                <div class="notification">🔔</div>
-                <img src="https://i.pravatar.cc/40" alt="Profile" class="profile-img">
-            </div>
-        </div>
-        <nav class="navbar-bottom">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="planets.html">Planètes</a></li>
-                <li><a href="missions.html">Missions Spatiales</a></li>
-                <li><a href="about.html">À propos</a></li>
-            </ul>
-            <a class="contact-btn" href="contact.html" aria-label="Contact">Contact Us</a>
-            <button class="menu-toggle" onclick="this.parentElement.classList.toggle('is-open')" aria-label="menu">Menu</button>
-        </nav>
-    </header>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <!-- Section supérieure -->
+    <div class="navbar-top">
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo">
+      </div>
+      <div class="navbar-right">
+        <input type="text" placeholder="Search..." class="search-bar">
+        <select class="language">
+          <option>Français</option>
+          <option>Anglais</option>
+          <option>Arabe</option>
+        </select>
+        <div class="notification">🔔</div>
+        <img src="https://i.pravatar.cc/40" alt="Profile" class="profile-img">
+      </div>
+    </div>
+    <!-- Section inférieure -->
+    <nav class="navbar-bottom">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planets.html">Planètes</a></li>
+        <li><a href="missions.html">Missions Spatiales</a></li>
+        <li><a href="about.html">À propos</a></li>
+      </ul>
+      <a class="contact-btn" href="contact.html" aria-label="Contact">Contact Us</a>
+    </nav>
+  </header>
+  <section class="slidr" aria-label="Hero">
+    <div class="slidr-content">
+      <div class="slidr-text">
+        <h1>Space Odyssey</h1>
+        <p>Explore the wonders of the universe. Discover stars, planets, and galaxies like never before!</p>
+      </div>
+      <div class="slidr-actions">
+        <a href="planets.html" class="explore-btn" aria-label="Explore Space">Explore Space</a>
+      </div>
+    </div>
+  </section>
 
     <main class="container">
         <h1 class="h1">Missions spatiales</h1>
