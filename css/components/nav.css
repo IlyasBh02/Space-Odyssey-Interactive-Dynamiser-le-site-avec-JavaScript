@@ -1,0 +1,147 @@
+.navbar {width: 100%;}
+
+/* --- Partie supérieure --- */
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../../img/bg.avif");
+  background-size: cover;
+  background-position: center;
+  padding: 15px 40px;
+  color: white;
+  backdrop-filter: brightness(0.8)
+}
+
+/* Logo */
+.logo {
+  height: 70px;
+  width: auto;
+  margin: 0;
+}
+
+/* Section droite */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Barre de recherche */
+.search-bar {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+.language {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.language option { color: black; }
+
+.notification {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.navbar-bottom {
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: #030712 0 10px 20px;
+}
+
+/* Mobile menu toggle */
+.menu-toggle{
+  display:none;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-accent);
+}
+
+.contact-btn {
+  background: black;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  background: var(--color-accent);
+  color: black;
+  border-color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .navbar-top {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle{display:block;}
+  .nav-links{display:none;}
+  .navbar-bottom.is-open .nav-links{display:flex;}
+}
+
+

@@ -1,0 +1,23 @@
+/* Missions page specific */
+.page-missions .slidr{background-image:url('../img/unsplash_Q_RBVFFXR_g.png');}
+
+.missions-card-title{
+  margin-bottom:6px;
+  font-size:1.1rem;
+}
+
+/* Toolbar */
+.missions-toolbar{display:flex;justify-content:flex-end;margin:12px 0 20px}
+.missions-search{
+  width: 100%;
+  max-width: 360px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.2);
+  outline: none;
+}
+
+/* Card polish */
+.grid .card{backdrop-filter: blur(6px);}
+
+

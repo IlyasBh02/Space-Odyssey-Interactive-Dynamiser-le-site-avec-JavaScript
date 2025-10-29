@@ -1,0 +1,151 @@
+/* Planets page specific */
+.page-planets .slidr{background-image:url('../img/img2.jpg');}
+
+.planets-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:20px;
+}
+
+.planets-header h1{
+  margin:0;
+}
+
+.planets-header p{
+  margin:0;
+}
+
+.planets-note{
+  font-size:0.95rem;
+  margin-top:18px;
+}
+
+/* ===== Utilities / Layout ===== */
+.container{
+  max-width:1200px;
+  margin:40px auto;
+}
+
+.container-narrow{max-width:1000px;margin:40px auto;padding:0 20px;}
+.container-tight{max-width:900px;margin:40px auto;padding:0 20px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+
+.card {
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 16px;
+  border-radius: 18px;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../img/img3.jpg") center/cover no-repeat;
+  opacity: 0.9; /* 🔹 opacité du fond seulement */
+  z-index: 0;
+}
+
+.community{
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-comunoty{
+  margin: 0 10px;
+}
+
+.card * {
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(4px);
+/* 🔹 garde le texte au-dessus du fond */
+}
+
+.muted{color:var(--color-muted);}
+.h1{font-family:"Roboto", sans-serif;font-size:40px;margin-bottom:12px;}
+
+/* Forms */
+.form-grid{display:grid;gap:12px;}
+
+/* ===== Planets page styles ===== */
+.planets-grid .card {
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+  transition:transform 200ms ease, box-shadow 200ms ease;
+}
+.planets-grid .card:hover {
+  transform:translateY(-6px);
+  box-shadow:0 12px 28px rgba(2,6,23,0.8);
+}
+
+.planet-top{display:flex;gap:12px;align-items:center;}
+.planet-img {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  overflow: hidden; /* image bien ronde */
+  flex: 0 0 84px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: inset 0 -6px 18px rgba(0,0,0,0.25);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.planet-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* adapte bien l’image au cercle */
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.planet-top:hover .planet-img img {
+  transform: scale(1.1);
+}
+
+.planet-info h2{margin:0;font-size:1.05rem;}
+.planet-info p{margin:4px 0 0 0;}
+.planet-desc{color:#cfe9ff;line-height:1.35;font-size:0.95rem;}
+.planet-data{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;}
+.planet-data .item{
+  background:rgba(255,255,255,0.07);
+  padding:6px 10px;
+  border-radius:8px;
+  font-size:0.82rem;
+  color:var(--color-muted);
+  transition: background 0.3s ease;
+}
+
+.planet-data .item:hover {
+  background:rgba(255,255,255,0.15);
+}
+
+.planet-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,188,212,0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.planet-top:hover .planet-img::after {
+  opacity: 1;
+}
+
+@media (max-width:420px){
+  .planet-img{width:72px;height:72px;}
+}

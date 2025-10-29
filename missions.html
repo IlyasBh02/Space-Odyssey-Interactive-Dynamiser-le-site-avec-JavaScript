@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&family=Poltawski+Nowy:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components/nav.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/mission.css">
 </head>
 <body class="page-missions">
 
@@ -54,17 +57,20 @@
 
     <main class="container">
         <h1 class="h1">Missions spatiales</h1>
+        <section class="missions-toolbar">
+          <input class="missions-search" type="search" placeholder="Rechercher une mission..." aria-label="Rechercher">
+        </section>
         <section class="grid">
             <article class="card">
-                <h2 style="margin-bottom:6px; font-size:1.1rem;">Apollo 11</h2>
+                <h2 class="missions-card-title">Apollo 11</h2>
                 <p class="muted">Premier alunissage habité (1969). Objectif: poser des humains sur la Lune et les ramener en sécurité.</p>
             </article>
             <article class="card">
-                <h2 style="margin-bottom:6px; font-size:1.1rem;">Voyager 1</h2>
+                <h2 class="missions-card-title">Voyager 1</h2>
                 <p class="muted">Sonde interstellaire (1977–). A fourni des images détaillées des planètes externes et poursuit sa route.</p>
             </article>
             <article class="card">
-                <h2 style="margin-bottom:6px; font-size:1.1rem;">James Webb Space Telescope</h2>
+                <h2 class="missions-card-title">James Webb Space Telescope</h2>
                 <p class="muted">Observatoire infrarouge lancé en 2021, dévoilant l’Univers primitif et l’atmosphère d’exoplanètes.</p>
             </article>
         </section>
