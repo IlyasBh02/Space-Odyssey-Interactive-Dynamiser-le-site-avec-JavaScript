@@ -2,16 +2,32 @@
 .page-contact .slidr{background-image:url('../img/unsplash_Q_RBVFFXR_g.png');}
 
 /* Layout refresh */
-.content{justify-items:center}
+.content{
+    justify-items:center
+}
+
 .contact-description{
     margin-top: 80px;
     margin-bottom: 40px;
 }
-.contact-description-content{margin: 30px;}
-.form-container{gap: 28px;row-gap: 28px;padding-right: 20px;}
+
+.contact-description-content{
+    margin: 30px;
+}
+
+.form-container{
+    gap: 28px;
+    row-gap: 28px;
+    padding-right: 20px;
+}
 
 /* Form inputs */
-.container-input label{font-size: 18px;font-weight: 400;color:#0f0f0f}
+.container-input label{
+    font-size: 18px;
+    font-weight: 400;
+    color:#0f0f0f
+}
+
 .container-input .input{
     background-color: transparent;
     padding: 12px;
@@ -19,18 +35,24 @@
     border-bottom:1px solid #414141;
     font-size: 16px;
 }
-textarea.input{resize: vertical; min-height: 120px;}
+textarea.input{
+    resize: vertical; 
+    min-height: 120px;
+}
 
-/* Remove old radio remnants */
 .container-radio, .radio-btn, .container-radio-title{display:none}
 
-/* Submit */
 .container-botton{margin-top: 10px}
 .container-botton input{padding: 12px 18px}
 
-/* Cards spacing */
-.contact-cards{margin-top: 60px; margin-bottom: 80px;}
-.contact-des{width: 75%;}
+.contact-cards{
+    margin-top: 60px; 
+    margin-bottom: 80px;
+}
+
+.contact-des{
+    width: 75%;
+}
 
 @media (max-width: 900px){
   .contact-description{grid-template-columns:1fr; margin-left: 6%; margin-right: 6%;}
@@ -40,8 +62,6 @@ textarea.input{resize: vertical; min-height: 120px;}
   .contact-cards{grid-template-columns:1fr; margin-left: 6%; margin-right: 6%;}
   .contact-des{width: 100%;}
 }
-/* ----- Contact Us page ----- */
-
 
   .contact-description{
     display: grid;
@@ -56,9 +76,11 @@ textarea.input{resize: vertical; min-height: 120px;}
     margin-left: 14%;
     margin-right: 14%;
 }
+
 .contact-description-img-parent{
     position: relative;
 }
+
 .contact-description-img-child{
     position: absolute;
     top: 20px;
@@ -68,44 +90,52 @@ textarea.input{resize: vertical; min-height: 120px;}
     grid-template-rows: auto 1fr  1fr;
     height: 95%;
 }
+
 .contact-description img{
     background-position: center;
     background-size: cover;
     border-radius: 15px;
     margin: 10px;
 }
+
 .contact-description-img p{
     font-size: 18px;
 }
+
 #CDI-title-h1{
     font-size: 36px;
     line-height: 0;
     font-family: 'Orbitron';
     font-weight: 600;
 }
+
 .CDI-middle{
     /* transform: translate(0%, 50%);  */
     color: rgb(255, 255, 255);
     align-content: end;
 }
+
 .CDI-middle-number ,.CDI-middle-email{
     display: grid;
     grid-template-columns: 50px 1fr;
     align-items: center;
     grid-auto-flow: column;
 }
+
 .CDI-social{
     display: grid;
     grid-auto-flow: column;
     align-items: end;
     width: 50px;
 }
+
 .contact-description-content{
     background-color: #ffffff;
     width: 100%;
 
     margin: 50px;
 }
+
 .form-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -114,9 +144,11 @@ textarea.input{resize: vertical; min-height: 120px;}
     row-gap: 40px;
     padding-right: 50px;
 }
+
 .form-container-left ,.form-container-right{
     grid-area: span 1;
 }
+
 .form-container-bottom{
     grid-column: span 2;
     display: grid;
@@ -126,6 +158,7 @@ textarea.input{resize: vertical; min-height: 120px;}
     display: grid;
     font-family: 'Poppins';
 }
+
 .container-input label{
     font-size: 25px;
     font-weight: 200;
@@ -191,10 +224,12 @@ textarea.input{resize: vertical; min-height: 120px;}
     justify-content: flex-start;
     justify-self: start;
 }
+
 .contact-cards-list p{
     text-align: start;
     font-family: 'Port Lligat Slab';
 }
+
 .contact-des{
     width: 65%;
 }
