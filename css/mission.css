@@ -1,11 +1,17 @@
 /* Missions page specific */
-.page-missions .slidr{background-image:url('../img/unsplash_Q_RBVFFXR_g.png');}
+.page-missions .slidr{background-image:url('../img/img3.jpg');}
 
 .missions-card-title{
   margin-bottom:6px;
   font-size:1.1rem;
 }
-
+.missions-card{
+  background:rgba(255,255,255,0.8);
+  border-radius:15px;
+  padding:16px;
+  box-shadow:0 4px 6px rgba(0,0,0,0.1);
+  transition:transform 0.2s,box-shadow 0.2s;
+}
 /* Toolbar */
 .missions-toolbar{display:flex;justify-content:flex-end;margin:12px 0 20px}
 .missions-search{
@@ -17,7 +23,34 @@
   outline: none;
 }
 
+img { max-width: 100%; height: auto; display: block; }
+.container{ max-width:1200px; margin:40px auto; padding:0 20px; }
+
+@media (max-width: 1024px) {
+  .slidr-text h1{font-size:44px;}
+  .Discover-cards{grid-template-columns: repeat(2,1fr); gap: 40px;}
+  .Discover-content{grid-template-columns: 1fr; margin-left: 8%; margin-right: 8%;}
+  .Astronomy{grid-template-columns: 1fr; margin-left: 8%; margin-right: 8%;}
+  .journale{grid-template-columns: 1fr; margin-left: 8%; margin-right: 8%;}
+  .contact-description{grid-template-columns: 1fr; margin-left: 8%; margin-right: 8%;}
+}
+
+
+
 /* Card polish */
 .grid .card{backdrop-filter: blur(6px);}
 
+
+.missions-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;}
+@media (max-width: 900px){
+  .missions-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+}
+@media (max-width: 600px){
+  .missions-grid{grid-template-columns:1fr;}
+}
+
+/* ===== Contact cards responsive ===== */
+@media (max-width: 900px){
+  .contact-cards{grid-template-columns:1fr;margin-left:8%;margin-right:8%;}
+}
 
