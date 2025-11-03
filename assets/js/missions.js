@@ -1,6 +1,3 @@
-// missions.js
-// Vanilla JS to add interactivity for missions page
-// Features: dynamic rendering, search, filters, CRUD (modal), favorites, tabs, localStorage
 
 (function(){
   // Local storage key
