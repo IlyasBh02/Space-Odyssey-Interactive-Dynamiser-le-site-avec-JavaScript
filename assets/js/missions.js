@@ -5,36 +5,36 @@
 
   // Sample missions (used only when no data in localStorage)
   const SAMPLE_MISSIONS = [
-    {
-      id: 'm-apollo11',
-      name: 'Apollo 11',
-      agency: 'NASA',
-      launchDate: '1969-07-16',
-      objective: "Premier alunissage habité et retour en sécurité de l’équipage.",
-      img: 'https://upload.wikimedia.org/wikipedia/commons/2/27/Apollo_11_insignia.png',
-      createdBy: 'system',
-      favorite: false
-    },
-    {
-      id: 'm-voyager1',
-      name: 'Voyager 1',
-      agency: 'NASA',
-      launchDate: '1977-09-05',
-      objective: 'Survol des planètes externes et étude du milieu interstellaire.',
-      img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Voyager_spacecraft.jpg/500px-Voyager_spacecraft.jpg',
-      createdBy: 'system',
-      favorite: false
-    },
-    {
-      id: 'm-hubble',
-      name: 'Hubble Space Telescope',
-      agency: 'NASA/ESA',
-      launchDate: '1990-04-24',
-      objective: 'Observations optiques et UV depuis l’orbite terrestre.',
-      img: 'https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg',
-      createdBy: 'system',
-      favorite: false
-    }
+    // {
+    //   id: 'm-apollo11',
+    //   name: 'Apollo 11',
+    //   agency: 'NASA',
+    //   launchDate: '1969-07-16',
+    //   objective: "Premier alunissage habité et retour en sécurité de l’équipage.",
+    //   img: 'https://upload.wikimedia.org/wikipedia/commons/2/27/Apollo_11_insignia.png',
+    //   createdBy: 'system',
+    //   favorite: false
+    // },
+    // {
+    //   id: 'm-voyager1',
+    //   name: 'Voyager 1',
+    //   agency: 'NASA',
+    //   launchDate: '1977-09-05',
+    //   objective: 'Survol des planètes externes et étude du milieu interstellaire.',
+    //   img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Voyager_spacecraft.jpg/500px-Voyager_spacecraft.jpg',
+    //   createdBy: 'system',
+    //   favorite: false
+    // },
+    // {
+    //   id: 'm-hubble',
+    //   name: 'Hubble Space Telescope',
+    //   agency: 'NASA/ESA',
+    //   launchDate: '1990-04-24',
+    //   objective: 'Observations optiques et UV depuis l’orbite terrestre.',
+    //   img: 'https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg',
+    //   createdBy: 'system',
+    //   favorite: false
+    // }
   ];
 
   // App state
