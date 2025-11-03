@@ -47,18 +47,50 @@
     localStorage.setItem(STORAGE_KEY, JSON.stringify(missions));
   }
 
-  function load(){
+  async function load(){
     const raw = localStorage.getItem(STORAGE_KEY);
-    if(raw){
-      try{
-        missions = JSON.parse(raw);
-        return;
-      }catch(e){
-        console.error('Failed parsing missions from storage', e);
+  // ✅ Otherwise: try load from missions.json (try multiple relative paths to support file:// and servers)
+  const candidatePaths = ['/missions.json'];
+  let loaded = false;
+  for (const p of candidatePaths) {
+    try {
+      console.log(`📂 Attempting to load missions.json from: ${p}`);
+      const response = await fetch(p);
+      if (!response.ok) {
+        console.warn(`Fetch to ${p} returned status ${response.status}`);
+        continue;
       }
+      const data = await response.json();
+      if (!Array.isArray(data)) {
+        console.warn(`Invalid JSON from ${p} - expected array`);
+        continue;
+      }
+
+      // Map JSON data to our mission structure
+      missions = data.map(m => ({
+        id: 'm-' + m.id,
+        name: m.name,
+        agency: m.agency,
+        launchDate: m.launchDate,
+        objective: m.objective,
+        img: m.image || m.img || '', // accept either field
+        createdBy: 'system',
+        favorite: false
+      }));
+
+      console.log(`✅ Successfully loaded ${missions.length} missions from ${p}`);
+      save();
+      loaded = true;
+      break;
+    } catch (e) {
+      console.warn(`Error fetching/parsing ${p}:`, e && e.message ? e.message : e);
+      // try next path
     }
-    missions = SAMPLE_MISSIONS.slice();
-    save();
+  }
+  if (!loaded) {
+    console.error("❌ Could not load missions.json from any known path. Falling back to empty list.");
+    missions = [];
+  }
   }
 
   function formatDisplayDate(iso){
@@ -344,8 +376,8 @@
   }
 
   // Init
-  function init(){
-    load();
+  async function init(){
+    await load();
     renderControls();
     setupSearch();
     renderMissions();
