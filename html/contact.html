@@ -3,36 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Space Odyssey</title>
+  <title>Space Odyssey - Contact</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&family=Poltawski+Nowy:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/components/nav.css">
-  <link rel="stylesheet" href="/css/components/footer.css">
-  <link rel="stylesheet" href="/css/contact.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components/nav.css">  
+  
 </head>
 <body class="page-contact">
-
   <!-- NAVBAR -->
   <header class="navbar">
-    <!-- Section supérieure -->
     <div class="navbar-top">
       <div class="logo">
         <img src="/img/logo.png" alt="logo">
       </div>
       <div class="navbar-right">
         <input type="text" placeholder="Search..." class="search-bar">
-        <select class="language">
-          <option>Français</option>
-          <option>Anglais</option>
-          <option>Arabe</option>
-        </select>
         <div class="notification">🔔</div>
         <img src="https://i.pravatar.cc/40" alt="Profile" class="profile-img">
       </div>
     </div>
-    <!-- Section inférieure -->
     <nav class="navbar-bottom">
       <ul class="nav-links">
         <li><a href="/index.html">Home</a></li>
@@ -43,137 +35,185 @@
       <a class="contact-btn" href="contact.html" aria-label="Contact">Contact Us</a>
     </nav>
   </header>
-  <!-- CONTACT -->
-  <section class="content">
-    <div class="contact-description">
-        <div class="contact-description-img-parent">
-            <img src="./img/contact-img.png" alt="contact-img">
-                <div class="contact-description-img-child">
-                    <div class="contact-description-img CDI-title">
-                        <p id="CDI-title-h1">Contact US</p>
-                        <p>Say something to start a live chat!</p>
-                    </div>
-                    <div class="contact-description-img CDI-middle">
-                        <div class="CDI-middle-number">
-                            <img src="/img/bxs_phone-call.png" alt="phone">
-                            <p> +1012 3456 789</p>
-                        </div>
-                        <div class="CDI-middle-email">
-                            <img src="/img/ic_sharp-email.png" alt="email">
-                            <p> demo@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-description-img CDI-social">
-                        <img src="/img/Social Network.png" alt="s1">
-                        <img src="/img/Social Network-1.png" alt="s2">
-                        <img src="/img/Social Network-2.png" alt="s3">
-                    </div>
-                </div>
-        </div>
-        <div class="contact-description-content">
-                <div class="content-form">
-                    <form method="post" action="#">
-                        <div class="form-container">
-                            <div class="form-container-left">
-                                <div class="container-input">
-                                    <label for="first-name">First Name :</label>
-                                    <input type="text" id="first-name" name="firstName" class="input" placeholder="Enter your first name" required>
-                                </div>
-                                <br><br>
-                                <div class="container-input">
-                                    <label for="email">Email :</label>
-                                    <input type="email" id="email" name="email" class="input" placeholder="Enter your email" required>
-                                </div>
-                            </div>
-                            <div class="form-container-right">
-                                <div class="container-input">
-                                    <label for="last-name">Last Name :</label>
-                                    <input type="text" id="last-name" name="lastName" class="input" placeholder="Enter your last name" required>
-                                </div>
-                                <br><br>
-                                <div class="container-input">
-                                    <label for="phone-number">Phone Number :</label>
-                                    <input type="tel" id="phone-number" name="phoneNumber" class="input" placeholder="Enter your phone number" required>
-                                </div>
-                            </div>
-                            <div class="form-container-bottom">
-                                <div class="container-input">
-                                    <label for="message">Message :</label>
-                                    <textarea id="message" name="message" class="input" rows="4" placeholder="Write your message..." required></textarea>
-                                </div>
-                            </div>
-                            <div class="container-botton">
-                                <input type="submit" value="Send Message">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-        </div>
-    </div>
-    <div class="contact-cards">
-        <div class="contact-cards-list">
-            <div class="contact-img">
-                <img src="/img/email_2099199 1.png" alt="contact-1">
-            </div>
-            <div class="contact-text">
-                <p>Email</p>
-            </div>
-            <div class="contact-des"><p>For any inquiries or assistance, feel free to contact us via email. We are here to help with your questions.</p></div>
-        </div>
-        <div class="contact-cards-list">
-            <div class="contact-img">
-                <img src="/img/chat_10547720 1.png" alt="contact-1">
-            </div>
-            <div class="contact-text">
-                <p>Live Chat</p>
-            </div>
-            <div class="contact-des">
-                <P>Connect with us through live chat for instant support and answers to your questions. We're here to help you!</P>
-                <a href="#">Click Here ></a>
-            </div>
-        </div>
-        <div class="contact-cards-list">
-            <div class="contact-img">
-                <img src="/img/phone-call_455705 1.png" alt="contact-1">
-            </div>
-            <div class="contact-text">
-                <p>Phone</p>
-            </div>
-            <div class="contact-des">
-                <P>Take the next step in your career with opportunities for development, mentorship, and professional networking.</P>
-                <a href="#">+94112224556</a>                    
-            </div>
-        </div>
-    </div>
-</section>
 
+  <!-- CONTACT SECTION -->
+  <main class="contact-main">
+    <div class="contact-hero">
+      <h1>Contact Us</h1>
+      <p>Ready to explore the universe with us? Get in touch and let's start your space journey</p>
+    </div>
 
-  
-  <div class="footer">
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form-section">
+        <div class="form-header">
+          <h2>Send us a Message</h2>
+          <p>Fill out the form below and we'll get back to you as soon as possible</p>
+        </div>
+        
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+              <div class="error-message" id="firstNameError"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+              <div class="error-message" id="lastNameError"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              <div class="error-message" id="emailError"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+              <div class="error-message" id="phoneError"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject</option>
+              <option value="general">General Inquiry</option>
+              <option value="mission">Mission Information</option>
+              <option value="partnership">Partnership</option>
+              <option value="career">Career Opportunities</option>
+              <option value="technical">Technical Support</option>
+              <option value="other">Other</option>
+            </select>
+            <div class="error-message" id="subjectError"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell us about your space exploration interests..." required></textarea>
+            <div class="error-message" id="messageError"></div>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to our space exploration newsletter</label>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loading" style="display: none;">
+              <div class="spinner"></div>
+              Sending...
+            </span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info-section">
+        <div class="contact-info-card">
+          <div class="info-header">
+            <h3>Get in Touch</h3>
+            <p>We're here to help you explore the final frontier</p>
+          </div>
+
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon">
+                <img src="/img/email_2099199 1.png" alt="Email">
+              </div>
+              <div class="method-content">
+                <h4>Email Us</h4>
+                <p>Send us an email anytime</p>
+                <a href="mailto:contact@spaceodyssey.com" class="contact-link">contact@spaceodyssey.com</a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="method-icon">
+                <img src="/img/phone-call_455705 1.png" alt="Phone">
+              </div>
+              <div class="method-content">
+                <h4>Call Us</h4>
+                <p>Mon-Fri from 8am to 6pm</p>
+                <a href="tel:+10123456789" class="contact-link">+1 (012) 345-6789</a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="method-icon">
+                <img src="/img/chat_10547720 1.png" alt="Live Chat">
+              </div>
+              <div class="method-content">
+                <h4>Live Chat</h4>
+                <p>Instant support available</p>
+                <button class="chat-btn" id="liveChatBtn">Start Chat</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-section">
+            <h4>Follow Our Journey</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <img src="/img/Social Network.png" alt="Instagram">
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <img src="/img/Social Network-1.png" alt="Facebook">
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <img src="/img/Social Network-2.png" alt="Twitter">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <div class="modal-icon">🚀</div>
+        <h3>Message Sent Successfully!</h3>
+        <p>Thank you for contacting Space Odyssey. We'll get back to you within 24 hours.</p>
+        <button class="modal-btn" id="modalClose">Continue Exploring</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="footer-content">
       <div class="footer-top">
-        <div class="footer1">
-          <a href="#">Legal</a>
+        <div class="footer-section">
+          <h4>Legal</h4>
           <a href="#">Terms of Service</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Cookies</a>
         </div>
-        <div class="footer2">
-          <a href="#">Information</a>
+        <div class="footer-section">
+          <h4>Information</h4>
           <a href="#">FAQ</a>
           <a href="#">Blog</a>
           <a href="#">Support</a>
         </div>
-        <div class="footer3">
-          <a href="#">company</a>
+        <div class="footer-section">
+          <h4>Company</h4>
           <a href="#">About us</a>
           <a href="#">Careers</a>
           <a href="#">Contact us</a>
         </div>
-        <div class="footer4">
-          <form>
-            <label for="subscribe">Subscribe</label>
-            <input type="text" id="subscribe" placeholder="Email adress" />
+        <div class="footer-section">
+          <h4>Subscribe</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Email address" required>
+            <button type="submit">Subscribe</button>
           </form>
         </div>
       </div>
@@ -181,32 +221,20 @@
         <div class="logo">
           <img src="/img/logo.png" alt="logo" />
         </div>
-        <div class="footer-bottom-links">
-          <ul>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Cookies</a></li>
-          </ul>
+        <div class="footer-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Cookies</a>
         </div>
         <div class="social-links">
-          <div class="social-links" style="background-color: black">
-            <a href="https://www.instagram.com/nasa/?hl=en" target="_blank"><img src="/img/Social Network.png" alt="instagram" /></a>
-            <a href="https://www.facebook.com/NASA/" target="_blank"><img src="/img/Social Network-1.png" alt="facebook" /></a>
-            <a href="https://x.com/NASA" target="_blank"><img src="/img/Social Network-2.png" alt="twitter" /></a>
-          </div>
+          <a href="#"><img src="/img/Social Network.png" alt="instagram" /></a>
+          <a href="#"><img src="/img/Social Network-1.png" alt="facebook" /></a>
+          <a href="#"><img src="/img/Social Network-2.png" alt="twitter" /></a>
         </div>
       </div>
-    </div>  
-  </div>
-  <script>
-    // Reveal sections on scroll
-    const sections = document.querySelectorAll('.section');
-    const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
-    });
-    }, { threshold: 0.2 });
-    sections.forEach(sec => observer.observe(sec));
-  </script>
-  </body>
-  </html>
+    </div>
+  </footer>
+
+  <script src="../assets/js/contact.js"></script>
+</body>
+</html>
