@@ -3,38 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Space Odyssey</title>
+  <title>Space Odyssey - Missions</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&family=Poltawski+Nowy:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/mission.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/components/nav.css">
-  <link rel="stylesheet" href="/css/components/footer.css">
-  <link rel="stylesheet" href="/css/mission.css">
 </head>
 <body class="page-missions">
-
   <!-- NAVBAR -->
   <header class="navbar">
-    <!-- Section supérieure -->
     <div class="navbar-top">
       <div class="logo">
         <img src="/img/logo.png" alt="logo">
       </div>
       <div class="navbar-right">
         <input id="searchInput" type="text" placeholder="Search..." class="search-bar">
-        <!--
-        <select class="language">
-          <option>Français</option>
-          <option>Anglais</option>
-          <option>Arabe</option>
-        </select>
-        -->
         <div class="notification">🔔</div>
         <img src="https://i.pravatar.cc/40" alt="Profile" class="profile-img">
       </div>
     </div>
-    <!-- Section inférieure -->
     <nav class="navbar-bottom">
       <ul class="nav-links">
         <li><a href="/index.html">Home</a></li>
@@ -47,60 +36,95 @@
   </header>
   
   <main class="container missions-section">
-    <!-- Toolbar and filters are injected by JS -->
-    <section class="missions-grid" aria-label="Liste des missions"></section>
+    <div class="missions-toolbar">
+      <div class="missions-tabs">
+        <button data-tab="all" class="tab-btn active">All Missions</button>
+        <button data-tab="favorites" class="tab-btn">Favorites</button>
+        <button data-tab="mine" class="tab-btn">My Missions</button>
+      </div>
+      <div class="missions-filters">
+        <select id="filterAgency">
+          <option value="all">All agencies</option>
+        </select>
+        <select id="filterYear">
+          <option value="all">All years</option>
+        </select>
+        <button class="create-mission-btn">New Mission</button>
+      </div>
+    </div>
+    
+    <section class="missions-grid" aria-label="Liste des missions">
+      <!-- Mission cards will be inserted here by JavaScript -->
+    </section>
   </main>
 
-
-    <div class="footer">
-      <div class="footer-content">
-        <div class="footer-top">
-          <div class="footer1">
-            <a href="#">Legal</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Cookies</a>
-          </div>
-          <div class="footer2">
-            <a href="#">Information</a>
-            <a href="#">FAQ</a>
-            <a href="#">Blog</a>
-            <a href="#">Support</a>
-          </div>
-          <div class="footer3">
-            <a href="#">company</a>
-            <a href="#">About us</a>
-            <a href="#">Careers</a>
-            <a href="#">Contact us</a>
-          </div>
-          <div class="footer4">
-            <form>
-              <label for="subscribe">Subscribe</label>
-              <input type="text" id="subscribe" placeholder="Email adress" />
-            </form>
-          </div>
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="footer1">
+          <a href="#">Legal</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookies</a>
         </div>
-        <div class="footer-bottom">
-          <div class="logo">
-            <img src="/img/logo.png" alt="logo" />
-          </div>
-          <div class="footer-bottom-links">
-            <ul>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Cookies</a></li>
-            </ul>
-          </div>
-          <div class="social-links">
-            <div class="social-links" style="background-color: black">
-              <a href="https://www.instagram.com/nasa/?hl=en" target="_blank"><img src="/img/Social Network.png" alt="instagram" /></a>
-              <a href="https://www.facebook.com/NASA/" target="_blank"><img src="/img/Social Network-1.png" alt="facebook" /></a>
-              <a href="https://x.com/NASA" target="_blank"><img src="/img/Social Network-2.png" alt="twitter" /></a>
-            </div>
-          </div>
+        <div class="footer2">
+          <a href="#">Information</a>
+          <a href="#">FAQ</a>
+          <a href="#">Blog</a>
+          <a href="#">Support</a>
+        </div>
+        <div class="footer3">
+          <a href="#">company</a>
+          <a href="#">About us</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="footer4">
+          <form>
+            <label for="subscribe">Subscribe</label>
+            <input type="text" id="subscribe" placeholder="Email adress" />
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="logo">
+          <img src="/img/logo.png" alt="logo" />
+        </div>
+        <div class="footer-bottom-links">
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/nasa/?hl=en" target="_blank"><img src="/img/Social Network.png" alt="instagram" /></a>
+          <a href="https://www.facebook.com/NASA/" target="_blank"><img src="/img/Social Network-1.png" alt="facebook" /></a>
+          <a href="https://x.com/NASA" target="_blank"><img src="/img/Social Network-2.png" alt="twitter" /></a>
         </div>
       </div>
     </div>
-        <script src="/assets/js/missions.js"></script>
-    </body>
-    </html>
+  </div>
+
+  <!-- Modal for creating/editing missions -->
+  <div class="modal" id="missionModal" style="display: none;">
+    <div class="modal-card">
+      <h3 class="modal-title">Mission</h3>
+      <form id="missionForm">
+        <input type="hidden" id="missionId">
+        <input type="text" id="missionName" class="modal-input" placeholder="Mission Name" required>
+        <input type="text" id="missionAgency" class="modal-input" placeholder="Agency" required>
+        <input type="date" id="missionLaunchDate" class="modal-input" required>
+        <textarea id="missionObjective" class="modal-input" placeholder="Objective" rows="3"></textarea>
+        <input type="text" id="missionImage" class="modal-input" placeholder="Image URL">
+        <div class="modal-actions">
+          <button type="button" class="modal-cancel">Cancel</button>
+          <button type="submit" class="modal-save">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/assets/js/missions.js"></script>
+</body>
+</html>
