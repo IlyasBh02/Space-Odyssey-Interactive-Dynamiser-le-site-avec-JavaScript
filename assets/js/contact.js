@@ -26,11 +26,6 @@ function validateField(input, regex, errorElement, errorMessage) {
   if (!regex.test(input.value.trim())) {
     input.classList.add("invalid");
     input.classList.remove("valid");
-
-    // shake animation
-    input.classList.add("shake");
-    setTimeout(() => input.classList.remove("shake"), 300);
-
     errorElement.innerText = errorMessage;
     return false;
   }
