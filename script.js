@@ -13,7 +13,7 @@ let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 // ===============================
 async function loadMissions() {
   try {
-    const response = await fetch('missions.json');
+    const response = await fetch('./missions.json');
     missions = await response.json();
 
     // TODO: Afficher les missions au chargement

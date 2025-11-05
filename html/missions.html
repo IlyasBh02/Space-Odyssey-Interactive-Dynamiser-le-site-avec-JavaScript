@@ -58,6 +58,26 @@
     </section>
   </main>
 
+  <!-- Favorites Sticky Button -->
+  <button class="favorites-sticky-btn" id="favoritesStickyBtn">
+    ★ Favorites
+    <span class="favorites-count">0</span>
+  </button>
+
+  <!-- Favorites Sidebar -->
+  <div class="favorites-sidebar" id="favoritesSidebar">
+    <div class="favorites-header">
+      <h3>Favorite Missions</h3>
+      <button class="close-favorites" id="closeFavorites">×</button>
+    </div>
+    <div class="favorites-list" id="favoritesList">
+      <!-- Favorite cards will be inserted here -->
+    </div>
+  </div>
+
+  <!-- Overlay for sidebar -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
   <div class="footer">
     <div class="footer-content">
       <div class="footer-top">
@@ -112,11 +132,26 @@
       <h3 class="modal-title">Mission</h3>
       <form id="missionForm">
         <input type="hidden" id="missionId">
-        <input type="text" id="missionName" class="modal-input" placeholder="Mission Name" required>
-        <input type="text" id="missionAgency" class="modal-input" placeholder="Agency" required>
-        <input type="date" id="missionLaunchDate" class="modal-input" required>
-        <textarea id="missionObjective" class="modal-input" placeholder="Objective" rows="3"></textarea>
-        <input type="text" id="missionImage" class="modal-input" placeholder="Image URL">
+        <div class="form-group">
+          <label for="missionName">Mission Name</label>
+          <input type="text" id="missionName" class="modal-input" placeholder="Mission Name" required>
+        </div>
+        <div class="form-group">
+          <label for="missionAgency">Agency</label>
+          <input type="text" id="missionAgency" class="modal-input" placeholder="Agency" required>
+        </div>
+        <div class="form-group">
+          <label for="missionLaunchDate">Launch Date</label>
+          <input type="date" id="missionLaunchDate" class="modal-input" required>
+        </div>
+        <div class="form-group">
+          <label for="missionObjective">Objective</label>
+          <textarea id="missionObjective" class="modal-input" placeholder="Objective" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="missionImage">Image URL</label>
+          <input type="text" id="missionImage" class="modal-input" placeholder="Image URL">
+        </div>
         <div class="modal-actions">
           <button type="button" class="modal-cancel">Cancel</button>
           <button type="submit" class="modal-save">Save</button>

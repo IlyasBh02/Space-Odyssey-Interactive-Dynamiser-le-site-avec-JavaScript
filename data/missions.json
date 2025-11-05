@@ -19,7 +19,7 @@
     "id": 3,
     "name": "Hubble Space Telescope",
     "agency": "NASA/ESA",
-    "objective": "Observations optiques et UV depuis l’orbite terrestre.",
+    "objective": "Observations optiques et UV depuis l'orbite terrestre.",
     "launchDate": "1990-04-24",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/HST-SM4.jpeg"
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "name": "Curiosity (MSL)",
     "agency": "NASA",
-    "objective": "Évaluer l’habitabilité passée de Mars et sa géologie.",
+    "objective": "Évaluer l'habitabilité passée de Mars et sa géologie.",
     "launchDate": "2011-11-26",
     "image": "https://d2pn8kiwq2w21t.cloudfront.net/original_images/spaceimagesimageslargesizePIA14156_hires.jpg"
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "name": "Perseverance (Mars 2020)",
     "agency": "NASA",
-    "objective": "Recherche de traces de vie et prélèvements d’échantillons.",
+    "objective": "Recherche de traces de vie et prélèvements d'échantillons.",
     "launchDate": "2020-07-30",
     "image": "https://cnes.fr/sites/default/files/styles/16x9_sm/public/2024-06/mission-perseverance-supercam.jpg.webp?itok=1f8gZ7sX"
   },
@@ -67,7 +67,7 @@
     "id": 9,
     "name": "Tianwen-1",
     "agency": "CNSA",
-    "objective": "Orbiteur, atterrisseur et rover Zhurong pour l’exploration de Mars.",
+    "objective": "Orbiteur, atterrisseur et rover Zhurong pour l'exploration de Mars.",
     "launchDate": "2020-07-23",
     "image": "https://www.sciencesetavenir.fr/assets/img/2021/02/10/cover-r4x3w1200-6023a6bc109a1-capture-d-ecran-2021-02-10-a-10-02-18.jpg"
   },
@@ -75,7 +75,7 @@
     "id": 10,
     "name": "James Webb Space Telescope",
     "agency": "NASA/ESA/CSA",
-    "objective": "Observation infrarouge de l’univers primitif et des exoplanètes.",
+    "objective": "Observation infrarouge de l'univers primitif et des exoplanètes.",
     "launchDate": "2021-12-25",
     "image": "https://d182hggomw8pjd.cloudfront.net/wp-content/uploads/sites/12/2022/01/04141412/2000x1333-JamesWebb-C.jpg"
   },
@@ -83,7 +83,7 @@
     "id": 11,
     "name": "Artemis I",
     "agency": "NASA",
-    "objective": "Vol d’essai sans équipage vers la Lune.",
+    "objective": "Vol d'essai sans équipage vers la Lune.",
     "launchDate": "2022-11-16",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsJxU3FAFts90leAoMFYZiFUdUfoCBS1XKWw&s"
   },
@@ -91,8 +91,8 @@
     "id": 12,
     "name": "Artemis II",
     "agency": "NASA",
-    "objective": "Premier vol habité d’Orion autour de la Lune.",
-    "launchDate": "2024-00-00",
+    "objective": "Premier vol habité d'Orion autour de la Lune.",
+    "launchDate": "2024-11-01",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwHNB9871HJa4VA0-IBVruqjcEG8fWxTWjQ&s"
   },
   {
