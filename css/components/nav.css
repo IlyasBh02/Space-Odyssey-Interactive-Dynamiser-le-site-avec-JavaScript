@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("../../img/bg.avif");
+  background: url("../../img/bg.avif");
   background-size: cover;
   background-position: center;
   padding: 15px 40px;
