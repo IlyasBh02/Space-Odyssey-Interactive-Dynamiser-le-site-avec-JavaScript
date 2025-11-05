@@ -834,6 +834,29 @@ body {
 }
 
 /* Form Notifications */
+.notification-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1002;
+}
+
+.form-notification {
+  background: linear-gradient(90deg, #10b981, #34d399);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  font-weight: 500;
+  margin-bottom: 10px;
+  animation: slideIn 0.3s ease-out;
+  min-width: 250px;
+}
+
+.form-notification.error {
+  background: linear-gradient(90deg, #ef4444, #f87171);
+}
+
 @keyframes slideIn {
   from {
     transform: translateX(100%);
@@ -856,16 +879,61 @@ body {
   }
 }
 
-.form-notification {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: linear-gradient(90deg, #10b981, #34d399);
-  color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  z-index: 1002;
-  font-weight: 500;
-  animation: slideIn 0.3s ease-out;
+/* Print Styles for Favorites */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  .favorites-sidebar,
+  .favorites-sidebar * {
+    visibility: visible;
+  }
+  
+  .favorites-sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+  }
+  
+  .favorites-header .close-favorites,
+  .favorites-header .print-favorites,
+  .remove-favorite {
+    display: none !important;
+  }
+}
+
+/* Print Button in Favorites */
+.print-favorites {
+  background: rgba(14, 165, 233, 0.15);
+  color: #0ea5e9;
+  border: 1px solid rgba(14, 165, 233, 0.3);
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.3s;
+}
+
+.print-favorites:hover {
+  background: rgba(14, 165, 233, 0.25);
+}
+
+.favorites-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 10px;
+}
+
+.favorites-header h3 {
+  color: #f8fafc;
+  font-size: 1.3rem;
+  margin: 0;
+  flex: 1;
 }
