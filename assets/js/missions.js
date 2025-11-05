@@ -49,10 +49,63 @@ async function loadMissions() {
   }
 }
 
+// Check URL for share parameter and highlight mission
+function checkShareParameter() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const sharedMissionId = urlParams.get('share');
+  
+  if (sharedMissionId) {
+    // Wait for missions to be rendered
+    setTimeout(() => {
+      highlightSharedMission(sharedMissionId);
+    }, 500);
+  }
+}
+
+// Highlight and animate the shared mission
+function highlightSharedMission(missionId) {
+  const missionCard = document.querySelector(`.mission-card[data-id="${missionId}"]`);
+  
+  if (missionCard) {
+    // Scroll to the card smoothly
+    missionCard.scrollIntoView({ 
+      behavior: 'smooth', 
+      block: 'center',
+      inline: 'center'
+    });
+    
+    // Add highlight animation
+    missionCard.classList.add('share-highlight');
+    
+    // Add blur effect to other cards temporarily
+    const allCards = document.querySelectorAll('.mission-card');
+    allCards.forEach(card => {
+      if (card !== missionCard) {
+        card.classList.add('blur-effect');
+      }
+    });
+    
+    // Remove animations after 3 seconds
+    setTimeout(() => {
+      missionCard.classList.remove('share-highlight');
+      allCards.forEach(card => {
+        card.classList.remove('blur-effect');
+      });
+    }, 3000);
+    
+    // Optional: Add border focus for longer visibility
+    missionCard.classList.add('card-focus');
+    setTimeout(() => {
+      missionCard.classList.remove('card-focus');
+    }, 5000);
+  }
+}
+
 // Initialize
 function init() {
   setupEventListeners();
   loadMissions();
+  checkShareParameter(); // Add this line
 }
 
 // Simple notification
@@ -211,9 +264,10 @@ function renderFavoritesList() {
   });
 }
 
-// Share functionality
+// Enhanced share functionality with better URL
 function generateShareUrl(missionId) {
-  return `${window.location.origin}${window.location.pathname}?share=${missionId}`;
+  const currentUrl = window.location.origin + window.location.pathname;
+  return `${currentUrl}?share=${missionId}`;
 }
 
 async function copyToClipboard(text) {
@@ -310,9 +364,15 @@ function createMissionCard(mission) {
   shareBtn.addEventListener('click', async () => {
     const shareUrl = generateShareUrl(mission.id);
     if (await copyToClipboard(shareUrl)) {
-      showNotification('Share link copied to clipboard!');
+      showNotification('Share link copied! Clicking it will highlight this mission');
       shareBtn.innerHTML = '✓ Copied!';
       setTimeout(() => shareBtn.innerHTML = '🔗 Share', 2000);
+      
+      // Optional: Preview the animation for the user
+      card.classList.add('share-highlight');
+      setTimeout(() => {
+        card.classList.remove('share-highlight');
+      }, 2000);
     }
   });
 
